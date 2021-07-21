@@ -1,13 +1,13 @@
-// Why build an array when you can just split a string into one? Such fewer quotation marks.
+// Why build an array when you can just split a string into one? Fewer quotation marks.
 const criteria = {
   "numeric": "0123456789",
   "upperCase": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   "lowerCase": "abcdefghijklmnopqrstuvwxyz",
-  "special": "/[!@#$%^&*()_+={};':|,.<>/?]+/;"
+  "special": "/[!@#$%^&*(-)_+={};':|,.<>/?]+"
 }
 
 var numericCharacters = function() {
-  return criteria["numeric"];
+  return criteria["numeric"].split("");
 }
 
 var upperCaseCharacters = function() {
@@ -20,7 +20,7 @@ var lowerCaseCharacters = function() {
 
 var specialCharacters = function() {
   return criteria["special"].split("");
-}
+};
 
 generatePassword = function() {
   var {
@@ -131,4 +131,4 @@ function writePassword() {
   passwordText.value = password;
 }
 
-document.getElementById("generate").addEventListener("click", writePassword());
+document.getElementById("generate").addEventListener("click", writePassword);
