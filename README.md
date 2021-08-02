@@ -1,8 +1,8 @@
-# Password Generator Starter Code
+# Password Generator
 
 ## Purpose
 
-#### This password generator will help you create a strong and secure password. First it will ask you to choose a password length between 8 and 128 characters long, and then ask you to choose at least one of four criteria in your randomized password. The criteria options include numbers, uppercase and lowercase letters, and special characters. 
+This password generator will help you create a strong and secure password. First it will ask you to choose a password length between 8 and 128 characters long, and then ask you to choose at least one of four criteria in your randomized password. The criteria options include numbers, uppercase and lowercase letters, and special characters. 
 
 ## Built With the Following:
 
